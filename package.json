@@ -6,12 +6,24 @@
     "mongoose": "^8.0.2"
   },
   "name": "bup",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "main": "src/index.js",
   "scripts": {
     "test": "node src/index.js"
   },
   "author": "hiftie",
   "license": "ISC",
-  "description": ""
+  "description": "Install all the required `npm` modules",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiftea/bup.git"
+  },
+  "keywords": [
+    "djs"
+  ],
+  "bugs": {
+    "url": "https://github.com/hiftea/bup/issues"
+  },
+  "homepage": "https://github.com/hiftea/bup#readme"
 }
