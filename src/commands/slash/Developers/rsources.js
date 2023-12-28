@@ -16,6 +16,14 @@ module.exports = {
     run: async (client, interaction) => {
 
         const embed = new EmbedBuilder()
-        .setDescription('## Welcome to Computer Builders 🪴💻\nA community dedicated to teaching people how to select the best parts and build their custom PCs. Share your knowledge, learn new things from others, and discuss computer hardware, software, and many other topics!\n## Some rules you gotta follow ✌️📑\n- Always show respect and kindness towards other members.\n- Communicate solely in English within this chat space.\n- Use your brain, stay mature and use your common sense.\n- Follow Discord\'s terms of services & community guidelines.')
+        .setDescription('## Here are some useful resources 🪴💻\n[Bottleneck Calculator](https://pc-builds.com/bottleneck-calculator/): Building a computer? Make sure to checkout this website to make sure your pc don\'t have a bottleneck!\n\n[FPS Calculator](https://pc-builds.com/fps-calculator/): Not sure if your pc is good enough to run games? Check this website to check it out in few steps!')
+        .setColor('5e6a74')
+
+        if (interaction.user.id === "853147823066578946" ) {
+            await interaction.channel.send({ embeds: [embed] })
+            await interaction.reply({ content: "Successfully sent the embed in " + interaction.channel.name, ephemeral: true})
+        } else {
+            await interaction.reply({ embeds: [embed], ephemeral: true });
+        }
     },
 };
